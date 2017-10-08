@@ -5,8 +5,8 @@ import itertools
 import re
 import glob
 
-for fileItem in glob.glob("../input/rawcsv/*.csv"):
-	fileName = fileItem.replace("../input/rawcsv/","").replace(".csv","")
+for fileItem in glob.glob("../input/dividedsamples/*.txt"):
+	fileName = fileItem.replace("../input/dividedsamples/","").replace(".txt","")
 	personDict = {}
 	csv = open(fileItem).readlines()
 	gephi = "Source,Target,Type,Weight\n"
